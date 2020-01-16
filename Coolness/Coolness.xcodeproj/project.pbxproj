@@ -12,6 +12,8 @@
 		B4A615BA23CE9FDB00BC8B73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A615B923CE9FDB00BC8B73 /* Assets.xcassets */; };
 		B4A615BD23CE9FDB00BC8B73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4A615BB23CE9FDB00BC8B73 /* LaunchScreen.storyboard */; };
 		B4A615C023CE9FDB00BC8B73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A615BF23CE9FDB00BC8B73 /* main.m */; };
+		B4A615C823CF949100BC8B73 /* CLNCoolController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A615C723CF949100BC8B73 /* CLNCoolController.m */; };
+		B4A615CB23CFBA0800BC8B73 /* CLNCoolViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A615CA23CFBA0700BC8B73 /* CLNCoolViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		B4A615BC23CE9FDB00BC8B73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4A615BE23CE9FDB00BC8B73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4A615BF23CE9FDB00BC8B73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B4A615C623CF949100BC8B73 /* CLNCoolController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLNCoolController.h; sourceTree = "<group>"; };
+		B4A615C723CF949100BC8B73 /* CLNCoolController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLNCoolController.m; sourceTree = "<group>"; };
+		B4A615C923CFBA0700BC8B73 /* CLNCoolViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLNCoolViewCell.h; sourceTree = "<group>"; };
+		B4A615CA23CFBA0700BC8B73 /* CLNCoolViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLNCoolViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,10 @@
 				B4A615AE23CE9FD900BC8B73 /* AppDelegate.m */,
 				B4A615B023CE9FD900BC8B73 /* SceneDelegate.h */,
 				B4A615B123CE9FD900BC8B73 /* SceneDelegate.m */,
+				B4A615C923CFBA0700BC8B73 /* CLNCoolViewCell.h */,
+				B4A615CA23CFBA0700BC8B73 /* CLNCoolViewCell.m */,
+				B4A615C623CF949100BC8B73 /* CLNCoolController.h */,
+				B4A615C723CF949100BC8B73 /* CLNCoolController.m */,
 				B4A615B923CE9FDB00BC8B73 /* Assets.xcassets */,
 				B4A615BB23CE9FDB00BC8B73 /* LaunchScreen.storyboard */,
 				B4A615BE23CE9FDB00BC8B73 /* Info.plist */,
@@ -137,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A615C823CF949100BC8B73 /* CLNCoolController.m in Sources */,
 				B4A615AF23CE9FD900BC8B73 /* AppDelegate.m in Sources */,
+				B4A615CB23CFBA0800BC8B73 /* CLNCoolViewCell.m in Sources */,
 				B4A615C023CE9FDB00BC8B73 /* main.m in Sources */,
 				B4A615B223CE9FD900BC8B73 /* SceneDelegate.m in Sources */,
 			);
