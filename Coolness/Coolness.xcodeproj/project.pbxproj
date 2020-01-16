@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B48F5A4423D0DB9A00BDCD95 /* BlockLiteralTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B48F5A4323D0DB9A00BDCD95 /* BlockLiteralTests.m */; };
 		B4A615AF23CE9FD900BC8B73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A615AE23CE9FD900BC8B73 /* AppDelegate.m */; };
 		B4A615B223CE9FD900BC8B73 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A615B123CE9FD900BC8B73 /* SceneDelegate.m */; };
 		B4A615BA23CE9FDB00BC8B73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A615B923CE9FDB00BC8B73 /* Assets.xcassets */; };
@@ -16,7 +17,20 @@
 		B4A615CB23CFBA0800BC8B73 /* CLNCoolViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4A615CA23CFBA0700BC8B73 /* CLNCoolViewCell.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B48F5A4623D0DB9A00BDCD95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B4A615A223CE9FD900BC8B73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4A615A923CE9FD900BC8B73;
+			remoteInfo = Coolness;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		B48F5A4123D0DB9A00BDCD95 /* CoolnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolnessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B48F5A4323D0DB9A00BDCD95 /* BlockLiteralTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockLiteralTests.m; sourceTree = "<group>"; };
+		B48F5A4523D0DB9A00BDCD95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4A615AA23CE9FD900BC8B73 /* Coolness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coolness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A615AD23CE9FD900BC8B73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B4A615AE23CE9FD900BC8B73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,6 +47,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B48F5A3E23D0DB9A00BDCD95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4A615A723CE9FD900BC8B73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,10 +64,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B48F5A4223D0DB9A00BDCD95 /* CoolnessTests */ = {
+			isa = PBXGroup;
+			children = (
+				B48F5A4323D0DB9A00BDCD95 /* BlockLiteralTests.m */,
+				B48F5A4523D0DB9A00BDCD95 /* Info.plist */,
+			);
+			path = CoolnessTests;
+			sourceTree = "<group>";
+		};
 		B4A615A123CE9FD900BC8B73 = {
 			isa = PBXGroup;
 			children = (
 				B4A615AC23CE9FD900BC8B73 /* Coolness */,
+				B48F5A4223D0DB9A00BDCD95 /* CoolnessTests */,
 				B4A615AB23CE9FD900BC8B73 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				B4A615AA23CE9FD900BC8B73 /* Coolness.app */,
+				B48F5A4123D0DB9A00BDCD95 /* CoolnessTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +113,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B48F5A4023D0DB9A00BDCD95 /* CoolnessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B48F5A4823D0DB9A00BDCD95 /* Build configuration list for PBXNativeTarget "CoolnessTests" */;
+			buildPhases = (
+				B48F5A3D23D0DB9A00BDCD95 /* Sources */,
+				B48F5A3E23D0DB9A00BDCD95 /* Frameworks */,
+				B48F5A3F23D0DB9A00BDCD95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B48F5A4723D0DB9A00BDCD95 /* PBXTargetDependency */,
+			);
+			name = CoolnessTests;
+			productName = CoolnessTests;
+			productReference = B48F5A4123D0DB9A00BDCD95 /* CoolnessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B4A615A923CE9FD900BC8B73 /* Coolness */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4A615C323CE9FDB00BC8B73 /* Build configuration list for PBXNativeTarget "Coolness" */;
@@ -107,6 +157,10 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "About Objects";
 				TargetAttributes = {
+					B48F5A4023D0DB9A00BDCD95 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = B4A615A923CE9FD900BC8B73;
+					};
 					B4A615A923CE9FD900BC8B73 = {
 						CreatedOnToolsVersion = 11.3;
 					};
@@ -126,11 +180,19 @@
 			projectRoot = "";
 			targets = (
 				B4A615A923CE9FD900BC8B73 /* Coolness */,
+				B48F5A4023D0DB9A00BDCD95 /* CoolnessTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B48F5A3F23D0DB9A00BDCD95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4A615A823CE9FD900BC8B73 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -143,6 +205,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B48F5A3D23D0DB9A00BDCD95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B48F5A4423D0DB9A00BDCD95 /* BlockLiteralTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B4A615A623CE9FD900BC8B73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,6 +227,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B48F5A4723D0DB9A00BDCD95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B4A615A923CE9FD900BC8B73 /* Coolness */;
+			targetProxy = B48F5A4623D0DB9A00BDCD95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		B4A615BB23CE9FDB00BC8B73 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -169,6 +247,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B48F5A4923D0DB9A00BDCD95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoolnessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.swiftui.CoolnessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coolness.app/Coolness";
+			};
+			name = Debug;
+		};
+		B48F5A4A23D0DB9A00BDCD95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoolnessTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.swiftui.CoolnessTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coolness.app/Coolness";
+			};
+			name = Release;
+		};
 		B4A615C123CE9FDB00BC8B73 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -314,6 +428,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B48F5A4823D0DB9A00BDCD95 /* Build configuration list for PBXNativeTarget "CoolnessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B48F5A4923D0DB9A00BDCD95 /* Debug */,
+				B48F5A4A23D0DB9A00BDCD95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B4A615A523CE9FD900BC8B73 /* Build configuration list for PBXProject "Coolness" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

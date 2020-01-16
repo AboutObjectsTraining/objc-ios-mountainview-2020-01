@@ -6,6 +6,19 @@
 
 @implementation CLNCoolController
 
+- (void)stopAnimations {
+    for (UIView *cell in self.view.subviews) {
+        [UIView animateWithDuration:1 animations:^{
+            cell.transform = CGAffineTransformIdentity;
+        }];
+    }
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"In %s", __func__);
+    [self stopAnimations];
+}
+
 - (void)loadView {
     self.view = [[UIView alloc] init];
     self.view.backgroundColor = UIColor.systemGreenColor;
