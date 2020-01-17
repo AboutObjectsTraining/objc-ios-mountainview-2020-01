@@ -65,18 +65,19 @@ const UIEdgeInsets CLNTextInsets = {
 }
 
 - (void)configureBounceWithSize:(CGSize)size {
-//    [UIView setAnimationRepeatCount:3];
-//    [UIView setAnimationRepeatAutoreverses:YES];
     CGAffineTransform translation = CGAffineTransformMakeTranslation(size.width, size.height);
     self.transform = CGAffineTransformRotate(translation, M_PI_2);
 }
 
 - (void)animateBounceWithDuration:(NSTimeInterval)duration size:(CGSize)size {
+    typeof(self) __weak weakSelf = self;
     [UIView animateWithDuration:duration
                           delay: 0
                         options: UIViewAnimationOptionAutoreverse | UIViewAnimationOptionRepeat
-                     animations:^{ [self configureBounceWithSize:size]; }
-                     completion:^(BOOL finished) { self.transform = CGAffineTransformIdentity; }];
+                     animations:^{
+        typeof(weakSelf) strongSelf = weakSelf;
+        [strongSelf configureBounceWithSize:size]; }
+                     completion:^(BOOL finished) { }];
 }
 
 
